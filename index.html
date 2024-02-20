@@ -1,57 +1,25 @@
 <html>
 <head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
     <title>Raye Hadi webpage</title>
-    <style>
-        body {
-            font-family: Verdana, sans-serif;
-            margin-left: 10%;
-            margin-right: 10%;
-            background-image: url(https://media.istockphoto.com/id/1346561862/photo/the-rotunda-at-the-university-of-virginia-built-in-1826-at-the-public-university-in.jpg?s=612x612&w=0&k=20&c=-gj1V7tdJSbArVTrAJN0b1p_4l83Nvz2Ag0OzBxTwm4=);
-            background-size: cover; /* Cover the entire page */
-            background-position: top center; /* Align the background image at the top */
-            background-repeat: no-repeat; /* Do not repeat the image */
-        }
-
-         .content{
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: calc(100% - 220px); /* Adjust the width based on the navigation menu */
-            height: 100%;
-            padding: 20px;
-            z-index: 2;
-            color: white;
-            font-size: 20px;
-         }
-
-        .navigation-wrap {
-            z-index: 3;
-        }
-
-        .navigation-item, .button {
-            color: white;
-            font-size: 20px;
-            margin-bottom: 30px; /* Increase spacing */
-            display: block; /* Ensure full-width clickable area */
-        }
-    </style>
 </head>
 <body>
-    <h1 style="color: white; font-weight: bold; text-align: center; font-size: 48px;">Project 2 content</h1>
-    <p align="center">
-        <span style="color: #FF33CC; font-size: 32px; font-family: Arial, sans-serif;">Will put more content here soon, <b>but just you wait!</b></span>
+    <h1 class="custom-title">Project 2 content</h1>
+    <p class="custom-content">
+        <span class="custom-span">Will put more content here soon, <b>but just you wait!</b></span>
     </p>
 
-    <div style="position: fixed; left: 0; top: 0; width: 200px; height: 100%; background-color: #333; font-size: 16px;" data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
-        <div class="navigation-wrap" style="color: white;">
-            <div class="menu" style="display: flex; flex-direction: column; align-items: flex-start; padding: 20px;">
-                <nav role="navigation" class="navigation-items w-nav-menu">
-                    <a href="https://www.amazon.com/?tag=amazusnavi-20&hvadid=675149237887&hvpos=&hvnetw=g&hvrand=10781216473324536499&hvpone=&hvptwo=&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1027070&hvtargid=kwd-10573980&ref=pd_sl_7j18redljs_e&hydadcr=28883_14649097&gad_source=1" class="navigation-item w-nav-link" style="color: white; font-size: 20px; margin-bottom: 100px;">Amazon</a>
-                    <a href="https://sisuva.admin.virginia.edu/psc/ihprd/UVSS/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=UVA01&" class="navigation-item w-nav-link" style="color: white; font-size: 20px; margin-bottom: 100px;">UVA SIS</a>
-                    <a href="https://canvas.virginia.edu/" class="navigation-item w-nav-link" style="color: white; font-size: 20px; margin-bottom: 100px;">Canvas</a>
-                    <a href="https://www.chipotle.com/?https%3A%2F%2Fchipotle.com%3Futm_confid&utm_source=google&utm_medium=search&utm_campaign=alwayson&gclsrc=aw.ds&gad_source=1&%243p=a_google_adwords&%24always_deeplink=false&~ad_set_id=22011605124&~campaign_id=300939564&~channel=g&~keyword=chipotle&~placement&gclid=CjwKCAiAuNGuBhAkEiwAGId4aqDUEydTmoSQHI4zIqYFtIopTa_gp7JiQp0eh8rYwDY7ngnqnXt7DBoCQqMQAvD_BwE&_branch_match_id=1137198029346681717" class="navigation-item w-nav-link" style="color: white; font-size: 20px; margin-bottom: 100px;">Chipotle</a>
+    <div class="navigation" data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner">
+        <div class="navigation-wrap">
+            <div class="menu">
+                <nav role="navigation" class="navigation-items">
+                    <a href="https://www.amazon.com/?tag=amazusnavi-20&hvadid=675149237887&hvpos=&hvnetw=g&hvrand=10781216473324536499&hvpone=&hvptwo=&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1027070&hvtargid=kwd-10573980&ref=pd_sl_7j18redljs_e&hydadcr=28883_14649097&gad_source=1" class="navigation-item">Amazon</a>
+                    <a href="https://sisuva.admin.virginia.edu/psc/ihprd/UVSS/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=UVA01&" class="navigation-item">UVA SIS</a>
+                    <a href="https://canvas.virginia.edu/" class="navigation-item">Canvas</a>
+                    <a href="https://www.chipotle.com/?https%3A%2F%2Fchipotle.com%3Futm_confid&utm_source=google&utm_medium=search&utm_campaign=alwayson&gclsrc=aw.ds&gad_source=1&%243p=a_google_adwords&%24always_deeplink=false&~ad_set_id=22011605124&~campaign_id=300939564&~channel=g&~keyword=chipotle&~placement&gclid=CjwKCAiAuNGuBhAkEiwAGId4aqDUEydTmoSQHI4zIqYFtIopTa_gp7JiQp0eh8rYwDY7ngnqnXt7DBoCQqMQAvD_BwE&_branch_match_id=1137198029346681717" class="navigation-item">Chipotle</a>
                 </nav>
-                <a href="mailto:johngolho@gmail.com" class="button cc-contact-us w-inline-block" style="color: white; font-size: 20px;">
+                <a href="mailto:johngolho@gmail.com" class="button">
                     <div>Contact</div>
                 </a>
             </div>
@@ -59,4 +27,3 @@
     </div>
 </body>
 </html>
-
