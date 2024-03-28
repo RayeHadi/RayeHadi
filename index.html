@@ -4,13 +4,49 @@
 
     <title>Raye Hadi webpage</title>
 </head>
+<a href="Carousel.html">See my photo carousel</a>
+
 <body>
     <h1 class="custom-title">Project 2 content</h1>
     <p class="custom-content">
         <span class="custom-span">Will put more content here soon, <b>but just you wait!</b></span>
     </p>
+    <h2>Exploring the DOM</h2>
 
-    <div class="navigation" data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner">
+    <h3>Count Down: <span id="count">20</span></h3>
+    <button onclick="updateCount()">Next</button>
+    <!-- Adding a reset button -->
+    <button onclick="resetCount()">Reset</button>
+
+    <script>
+        var i = 20;
+
+        function updateCount() {
+            i = i - 1;
+            var countobj = document.getElementById("count");
+            console.log("Updating object: " + countobj);
+            countobj.innerHTML = "<b>" + i + "</b>";
+
+            // Change the background color gradually to red as i decreases
+            var intensity = Math.floor(255 * (1 - (i / 20)));
+            document.body.style.backgroundColor = 'rgb(' + intensity + ',0,0)';
+
+            // Do something special when i reaches 0
+            if (i === 0) {
+                alert("Time's up!");
+            }
+        }
+
+        // Reset function
+        function resetCount() {
+            i = 20; // Resetting the counter
+            document.getElementById("count").innerHTML = "<b>" + i + "</b>";
+            document.body.style.backgroundColor = ''; // Resetting the background color
+        }
+    </script>
+
+
+    <!--<div class="navigation" data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner">
         <div class="navigation-wrap">
             <div class="menu">
                 <nav role="navigation" class="navigation-items">
@@ -25,5 +61,6 @@
             </div>
         </div>
     </div>
+        -->
 </body>
 </html>

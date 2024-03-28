@@ -1,0 +1,42 @@
+<html>
+<a href="index.html">Back To Home</a>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Photo Carousel</title>
+    <style>
+        .carousel-container {
+            text-align: center;
+            margin: auto;
+        }
+
+        img {
+            width: 80%; 
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <img id="carouselImage" src="UniHeader.jpg" alt="Carousel image">
+        <br>
+        <button onclick="prevImage()">Prev</button> <!--functionality, prev button-->
+        <button onclick="nextImage()">Next</button>
+    </div>
+
+    <script>
+        var currentImageIndex = 0;
+        var images = ['UniHeader.jpg', 'DEXimg.png', 'mkr.png'];
+        //image array here
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById('carouselImage').src = images[currentImageIndex];
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            document.getElementById('carouselImage').src = images[currentImageIndex];
+        }
+    </script>
+</body>
+</html>
