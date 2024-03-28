@@ -15,7 +15,7 @@
 
     <h3>Count Down: <span id="count">20</span></h3>
     <button onclick="updateCount()">Next</button>
-    <!-- Adding a reset button -->
+    
     <button onclick="resetCount()">Reset</button>
 
     <script>
@@ -27,11 +27,11 @@
             console.log("Updating object: " + countobj);
             countobj.innerHTML = "<b>" + i + "</b>";
 
-            // Change the background color gradually to red as i decreases
+            //gradually change to red
             var intensity = Math.floor(255 * (1 - (i / 20)));
             document.body.style.backgroundColor = 'rgb(' + intensity + ',0,0)';
 
-            // Do something special when i reaches 0
+            //if statement for i
             if (i === 0) {
                 alert("Time's up!");
             }
@@ -39,9 +39,9 @@
 
         // Reset function
         function resetCount() {
-            i = 20; // Resetting the counter
+            i = 20; // resets counter
             document.getElementById("count").innerHTML = "<b>" + i + "</b>";
-            document.body.style.backgroundColor = ''; // Resetting the background color
+            document.body.style.backgroundColor = ''; //resets color
         }
     </script>
 
